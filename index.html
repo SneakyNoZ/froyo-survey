@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froyo Survey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Check console for results!</h1>
+    </header>
+
+    <code>
+    // create customer object<br>
+    let customer = {<br>
+    firstName: "jake",<br>
+    lastName: "smith",<br>
+    email: "jaekSmih!aol.com",<br>
+    phone: undefined,<br>
+    zipCode: "631",<br>
+    favoriteFlavors: 32,<br>
+    cupSize: "medium",<br>
+    favoriteStore: "Target",<br>
+    firstVisit: false<br>
+  };<br>
+  
+  // modify properties using bracket notation<br>
+  customer["email"] = "Jak3Smith1992@email.com";<br>
+  customer["phone"] = 3195551234;<br>
+  customer["zipCode"] = "63132";<br>
+  customer["favoriteFlavors"] = ["coffee", "strawberry", "matcha"];<br>
+  
+  // delete properties using the delete keyword<br>
+  delete customer["zipCode"];<br>
+  delete customer["favoriteStore"];<br>
+  
+  // add new properties using dot notation<br>
+  customer.toppings = ["chocolate sprinkles", "wafer straws", "gummy bears"];<br>
+  customer.futureFlavors = ["mango"];<br>
+  customer.todaysPurchaseCost = 5.32;<br>
+  
+  // print keys in survey<br>
+  console.log(Object.keys(customer));<br>
+  
+  // display customer object in table format<br>
+  console.table(customer);<br>
+    </code>
+
+<script src="survey.js"></script>
+
+</body>
+</html>
